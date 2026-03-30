@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Евгений Валентюк – Senior System Analyst / Solution Architect</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#0f1117;color:#d4d8e8;line-height:1.65;-webkit-font-smoothing:antialiased}
+code,.pill{font-family:'Cascadia Code','Fira Code','Consolas',monospace}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px 60px}
+
+/* Header */
+.header{padding:48px 0 32px;border-bottom:2px solid #4a7cff}
+.header h1{font-size:32px;color:#eef0f6;font-weight:700;margin-bottom:4px}
+.header .role{font-size:18px;color:#4a7cff;font-weight:500;margin-bottom:4px}
+.header .tagline{font-size:14px;color:#8a8fa8;margin-bottom:16px}
+.header .summary{font-size:14px;color:#d4d8e8;margin-bottom:16px;line-height:1.7}
+.header .contacts{font-size:13px;color:#8a8fa8}
+.header .contacts a{color:#4a7cff;text-decoration:none}
+.header .contacts a:hover{text-decoration:underline}
+
+/* Sections */
+.section{margin-top:40px}
+.section-title{font-size:20px;color:#eef0f6;font-weight:600;margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid #252835}
+
+/* Cards grid */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.card{background:#1a1d27;border:1px solid #252835;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.3);transition:background .2s}
+.card:hover{background:#1f2233}
+.card h3{font-size:15px;color:#4a7cff;font-weight:600;margin-bottom:10px}
+.card ul{padding-left:18px;font-size:13px}
+.card li{margin-bottom:5px;color:#d4d8e8}
+
+/* Differentiators */
+.diff-list{list-style:none;padding:0}
+.diff-list li{padding:12px 0 12px 18px;border-left:3px solid #4a7cff;margin-bottom:10px;font-size:14px}
+.diff-list li strong{color:#eef0f6}
+
+/* Metrics */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.metric{background:#1a1d27;border:1px solid #252835;border-radius:8px;padding:20px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.metric .num{font-size:32px;font-weight:700;color:#4a7cff;line-height:1.2}
+.metric .label{font-size:12px;color:#8a8fa8;margin-top:4px}
+
+/* Stack */
+.stack-group{margin-bottom:14px}
+.stack-group .cat{font-size:13px;font-weight:600;color:#eef0f6;margin-bottom:6px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{display:inline-block;background:rgba(74,124,255,.12);color:#4a7cff;border-radius:12px;padding:3px 10px;font-size:12px}
+
+/* Footer */
+.footer{margin-top:48px;padding-top:20px;border-top:1px solid #252835;text-align:center;font-size:13px;color:#8a8fa8}
+.footer a{color:#4a7cff;text-decoration:none}
+
+/* Responsive */
+@media(max-width:768px){
+  .cards{grid-template-columns:1fr}
+  .metrics{grid-template-columns:1fr 1fr}
+  .header h1{font-size:26px}
+  .header .role{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Евгений Валентюк</h1>
+    <div class="role">Senior System Analyst / Solution Architect</div>
+    <div class="tagline">Full-stack аналитик с архитектурным уклоном</div>
+    <div class="summary">7+ лет в продуктовой разработке, 4 домена: финтех, ретейл, медтех, ЖКХ/энергетика. Проектирую микросервисы, API, интеграции, схемы данных – от сбора потребностей до сдачи заказчику. Руководил командой из 6 аналитиков.</div>
+    <div class="contacts">Telegram <a href="https://t.me/EugeneValentyuk">@EugeneValentyuk</a> &nbsp;|&nbsp; +7 902 501-40-47 &nbsp;|&nbsp; <a href="mailto:e.valentyuk@yandex.ru">e.valentyuk@yandex.ru</a></div>
+  </div>
+
+  <!-- Что я делаю -->
+  <div class="section">
+    <div class="section-title">Что я делаю</div>
+    <div class="cards">
+      <div class="card">
+        <h3>Архитектура решений</h3>
+        <ul>
+          <li>Проектирование микросервисной архитектуры: границы сервисов, API-контракты, межсервисные взаимодействия (REST, Kafka).</li>
+          <li>Рефакторинг архитектурного ландшафта: оптимизация интеграций, переиспользование компонентов.</li>
+          <li>Миграция монолитов в микросервисы: Oracle → PostgreSQL, strangler fig pattern, database per service.</li>
+          <li>C4-диаграммы, sequence, component – описание архитектуры на всех уровнях.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Бизнес-анализ и требования</h3>
+        <ul>
+          <li>Сбор и формализация требований: интервью, воркшопы, AS IS / TO BE.</li>
+          <li>User Stories (INVEST), Use Cases, SRS, ЧТЗ, acceptance criteria.</li>
+          <li>Постановки на фронтенд, бэкенд, QA – в формате, готовом для разработки.</li>
+          <li>BPMN 2.0, UML, ERD – моделирование процессов и данных.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Интеграции</h3>
+        <ul>
+          <li>REST API: проектирование эндпоинтов, OpenAPI/Swagger, версионирование контрактов.</li>
+          <li>Kafka: топики, схемы событий, гарантии доставки, DLQ.</li>
+          <li>Опыт интеграции с ГИС ЖКХ, АБС, госуслугами, логистическим ПО, биллинговыми системами.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Чем отличаюсь -->
+  <div class="section">
+    <div class="section-title">Чем отличаюсь</div>
+    <ul class="diff-list">
+      <li><strong>Full-stack аналитик с архитектурным мышлением.</strong> Не просто собираю требования – проектирую решения: выбираю протоколы, рисую схемы взаимодействия, определяю границы сервисов. Работаю в связке с архитектором или самостоятельно.</li>
+      <li><strong>Стандартизация и процессы.</strong> Создаю шаблоны документации, внедряю ревью требований, выстраиваю процесс «БА → СА → Архитектор». Результат: снижение возвратов на 30%, ошибок интеграций на 35%.</li>
+      <li><strong>Быстрое погружение в домен.</strong> 4 домена за 7 лет – каждый раз за 1–2 месяца выходил на уверенный уровень. ЖКХ, ретейл, банк, медтех – везде продуктивность с первых недель.</li>
+      <li><strong>Полный цикл.</strong> От пресейла и Discovery до Delivery, тестирования и сдачи заказчику. Умею разговаривать и с бизнесом, и с разработчиками.</li>
+    </ul>
+  </div>
+
+  <!-- Цифры -->
+  <div class="section">
+    <div class="section-title">Цифры</div>
+    <div class="metrics">
+      <div class="metric"><div class="num">35%</div><div class="label">снижение ошибок интеграций</div></div>
+      <div class="metric"><div class="num">40%</div><div class="label">снижение дефектов на тестировании</div></div>
+      <div class="metric"><div class="num">30%</div><div class="label">ускорение запуска платформы</div></div>
+      <div class="metric"><div class="num">30%</div><div class="label">снижение возвратов требований</div></div>
+      <div class="metric"><div class="num">6</div><div class="label">аналитиков в команде (2 БА + 4 СА)</div></div>
+      <div class="metric"><div class="num">400 тыс.</div><div class="label">лицевых счетов мигрировано</div></div>
+    </div>
+  </div>
+
+  <!-- Стек -->
+  <div class="section">
+    <div class="section-title">Стек</div>
+    <div class="stack-group">
+      <div class="cat">Анализ и моделирование</div>
+      <div class="pills">
+        <span class="pill">BPMN 2.0</span><span class="pill">UML</span><span class="pill">C4</span><span class="pill">Sequence</span><span class="pill">Component</span><span class="pill">Activity</span><span class="pill">ERD</span><span class="pill">CJM</span><span class="pill">Data Flow</span><span class="pill">User Story</span><span class="pill">Use Case</span><span class="pill">SRS</span><span class="pill">ЧТЗ</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="cat">Интеграции и API</div>
+      <div class="pills">
+        <span class="pill">REST API</span><span class="pill">Kafka</span><span class="pill">SOAP</span><span class="pill">OpenAPI/Swagger</span><span class="pill">Postman</span><span class="pill">JSON</span><span class="pill">YAML</span><span class="pill">OAuth</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="cat">Базы данных</div>
+      <div class="pills">
+        <span class="pill">PostgreSQL</span><span class="pill">Oracle</span><span class="pill">MS SQL Server</span><span class="pill">DBeaver</span><span class="pill">SQL</span><span class="pill">JOIN</span><span class="pill">CTE</span><span class="pill">оконные функции</span><span class="pill">ER-моделирование</span><span class="pill">миграция данных</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="cat">Инструменты</div>
+      <div class="pills">
+        <span class="pill">Jira</span><span class="pill">Confluence</span><span class="pill">GitLab</span><span class="pill">PlantUML</span><span class="pill">Mermaid</span><span class="pill">Draw.io</span><span class="pill">Miro</span><span class="pill">Figma</span><span class="pill">VS Code</span><span class="pill">Docs as Code</span>
+      </div>
+    </div>
+    <div class="stack-group">
+      <div class="cat">Методологии</div>
+      <div class="pills">
+        <span class="pill">Scrum</span><span class="pill">Kanban</span><span class="pill">Scrumban</span><span class="pill">Waterfall</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Удалёнка, полная занятость или проектная работа. Екатеринбург, РФ.</p>
+    <p>Английский B1+ (техническая документация без словаря, разговорный до B2–C1 при практике).</p>
+    <p style="margin-top:12px">Telegram <a href="https://t.me/EugeneValentyuk">@EugeneValentyuk</a> &nbsp;|&nbsp; +7 902 501-40-47 &nbsp;|&nbsp; <a href="mailto:e.valentyuk@yandex.ru">e.valentyuk@yandex.ru</a></p>
+  </div>
+
+</div>
+</body>
+</html>
